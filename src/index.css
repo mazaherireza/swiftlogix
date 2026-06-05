@@ -24,3 +24,17 @@ option,
 optgroup {
   font: inherit;
 }
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
