@@ -1,0 +1,11 @@
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    hsl(200deg 100% 77%) 10%,
+    hsl(200deg 99% 35%) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
