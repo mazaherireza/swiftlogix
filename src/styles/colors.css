@@ -8,8 +8,8 @@
   --color-gray-20: hsl(0deg 0% 20%);
   --color-gray-10: hsl(0deg 0% 10%);
 
-  --color-primary: hsl(199deb 96% 27%);
-  --color-primary-hover: hsl(199deb 96% 22%);
-  --color-primary-fade: hsl(203deb 100% 97%);
-  --color-primary-border: hsl(201deb 100% 86%);
+  --color-primary: hsl(199deg 96% 27%);
+  --color-primary-hover: hsl(199deg 96% 22%);
+  --color-primary-fade: hsl(203deg 100% 97%);
+  --color-primary-border: hsl(201deg 100% 86%);
 }
