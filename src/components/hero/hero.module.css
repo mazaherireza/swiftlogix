@@ -7,7 +7,7 @@
 
   min-block-size: 42.5rem;
 
-  padding-inline-start: max(1rem, (100% - 75rem) / 2);
+  padding-inline-start: max(1rem, (100% - var(--layout-size-1)) / 2);
 
   .background {
     position: absolute;

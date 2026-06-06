@@ -2,7 +2,7 @@
   display: grid;
   gap: 3rem;
 
-  inline-size: min(72rem, 100% - 2rem);
+  inline-size: min(var(--layout-size-1), 100% - 2rem);
 
   margin-inline: 7rem auto;
 
