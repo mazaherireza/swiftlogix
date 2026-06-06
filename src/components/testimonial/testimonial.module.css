@@ -1,0 +1,59 @@
+.testimonial {
+  display: grid;
+  grid-template-columns: [void-start] 4.5rem [void-end background-start] 3.75rem [review-start] 1fr [review-end] 4rem [truck-start] 1fr [button-start] auto [background-end] 5.75rem [button-end] 4.5rem [truck-end];
+  grid-template-rows: [void-start background-start] 2rem [review-start truck-start] auto [truck-end button-start] auto [review-end button-end] 3rem [void-end background-end];
+
+  inline-size: min(var(--layout-size-1), 100% - 2rem);
+
+  margin-inline: auto;
+
+  .void {
+    grid-area: void;
+  }
+
+  .background {
+    grid-area: background;
+
+    background-color: var(--color-gray-98);
+
+    box-shadow: var(--shadow-700);
+
+    border-radius: var(--border-radius-5);
+  }
+
+  .review {
+    grid-area: review;
+
+    display: grid;
+    gap: 1rem;
+
+    align-content: center;
+
+    .title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    > p {
+      font-size: 1.125rem;
+      line-height: 1.5;
+
+      text-align: justify;
+    }
+
+    .double-quotes {
+      opacity: 0.12;
+    }
+  }
+
+  .container-truck {
+    grid-area: truck;
+
+    inline-size: 100%;
+  }
+
+  .button {
+    grid-area: button;
+  }
+}
