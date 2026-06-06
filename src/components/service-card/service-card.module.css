@@ -11,6 +11,8 @@
 
   box-shadow: var(--shadow-500);
 
+  position: relative;
+
   .icon {
     color: var(--color-primary);
     background-color: var(--color-primary-fade);
@@ -45,5 +47,21 @@
     line-height: 1.7;
 
     text-align: justify;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+
+    background-image: linear-gradient(
+      to right,
+      hsl(200deg 100% 77%) 10%,
+      hsl(200deg 99% 35%) 100%
+    );
+
+    border-radius: inherit;
   }
 }
