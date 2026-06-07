@@ -1,0 +1,45 @@
+.call-to-action {
+  background-color: var(--color-primary-fade);
+
+  border-radius: var(--border-radius-5);
+
+  inline-size: min(var(--layout-size-1), 100% - 2rem);
+
+  margin: 7rem auto;
+  padding: 2.75rem 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem;
+
+  .writings {
+    display: grid;
+    justify-items: start;
+    gap: 1.5rem;
+
+    .title {
+      color: var(--color-primary);
+
+      font-size: 2.5rem;
+      font-weight: 600;
+
+      line-height: 1.3;
+    }
+
+    > p {
+      color: var(--color-gray-30);
+
+      max-inline-size: 50ch;
+
+      font-size: 1.25rem;
+
+      line-height: 1.5;
+
+      text-align: justify;
+    }
+  }
+
+  .image {
+  }
+}

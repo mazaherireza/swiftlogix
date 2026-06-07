@@ -5,6 +5,8 @@ import ServicesComponent from "@/components/services/services.component";
 import TestimonialComponent from "@/components/testimonial/testimonial.component";
 import StatisticsComponent from "@/components/statistics/statistics.component";
 
+import CallToActionComponent from "@/components/call-to-action/call-to-action.component";
+
 import styles from "./home.module.css";
 
 export default function HomePage(): ReactNode {
@@ -14,6 +16,7 @@ export default function HomePage(): ReactNode {
       <ServicesComponent />
       <TestimonialComponent />
       <StatisticsComponent />
+      <CallToActionComponent />
     </div>
   );
 }
