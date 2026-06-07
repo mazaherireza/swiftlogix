@@ -6,6 +6,8 @@ import { NavLink } from "react-router";
 
 import ButtonComponent from "@/components/button/button.component";
 
+import hamburgerIcon from "@/assets/images/hamburger-icon.svg";
+
 import styles from "./header.module.css";
 
 export default function HeaderComponent(): ReactNode {
@@ -60,6 +62,7 @@ export default function HeaderComponent(): ReactNode {
         <ButtonComponent>Log In</ButtonComponent>
         <ButtonComponent variant="outline">Sign Up</ButtonComponent>
       </div>
+      <img className={styles["hamburger-icon"]} src={hamburgerIcon} alt="" />
     </header>
   );
 }

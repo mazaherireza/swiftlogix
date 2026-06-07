@@ -4,34 +4,55 @@
   justify-content: space-between;
   gap: 1rem;
 
-  padding-block: 2rem;
-
   inline-size: min(var(--layout-size-1), 100% - 2rem);
+  
+  padding-block: 2rem;
 
   margin-inline: auto;
 
-  .logo {
+  nav {
+    display: none;
   }
 
-  nav {
-    > ul {
-      display: flex;
-      gap: 3rem;
+  .actions {
+    display: none;
+  }
 
-      > li {
-        a {
-          &.active {
-            color: var(--color-primary);
+  .hamburger-icon {
+    font-size: 1.5rem;
 
-            font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    nav {
+      display: block;
+
+      > ul {
+        display: flex;
+        gap: 3rem;
+
+        > li {
+          a {
+            &.active {
+              color: var(--color-primary);
+
+              font-weight: 700;
+            }
           }
         }
       }
     }
-  }
 
-  .actions {
-    display: flex;
-    gap: 0.75rem;
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .hamburger-icon {
+      display: none;
+    }
   }
 }
