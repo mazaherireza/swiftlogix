@@ -1,0 +1,9 @@
+.statistics {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  inline-size: min(var(--layout-size-1), 100% - 2rem);
+
+  margin: 8rem auto;
+}
