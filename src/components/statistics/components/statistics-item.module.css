@@ -1,0 +1,21 @@
+.statistics-item {
+  display: grid;
+  justify-items: center;
+
+  .value {
+    font-family: "Manrope", system-ui;
+    font-size: 3rem;
+    font-weight: 800;
+
+    line-height: 1;
+  }
+
+  .description {
+    color: var(--color-gray-40);
+
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    line-height: 1.7;
+  }
+}
