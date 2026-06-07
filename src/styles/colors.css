@@ -11,5 +11,5 @@
   --color-primary: hsl(199deg 96% 27%);
   --color-primary-hover: hsl(199deg 96% 22%);
   --color-primary-fade: hsl(203deg 100% 97%);
-  --color-primary-border: hsl(201deg 100% 86%);
+  --color-primary-divider: hsl(201deg 100% 86%);
 }
