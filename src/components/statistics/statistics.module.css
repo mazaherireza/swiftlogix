@@ -1,9 +1,16 @@
 .statistics {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
   gap: 3rem;
 
   inline-size: min(var(--layout-size-1), 100% - 2rem);
 
   margin: 8rem auto;
+}
+
+@media (min-width: 1200px) {
+  .statistics {
+    grid-template-columns: repeat(4, auto);
+  }
 }
