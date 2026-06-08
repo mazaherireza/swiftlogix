@@ -1,14 +1,14 @@
 .testimonial {
   display: grid;
-  grid-template-columns: [void-start] 4.5rem [void-end background-start] 3.75rem [review-start] 1fr [review-end] 4rem [truck-start] 1fr [button-start] auto [background-end] 5.75rem [button-end] 4.5rem [truck-end];
-  grid-template-rows: [void-start background-start] 2rem [review-start truck-start] auto [truck-end button-start] auto [review-end button-end] 3rem [void-end background-end];
+  grid-template-columns: [background-start] 2rem [review-start truck-start button-start quote-start] 1fr [review-end truck-end button-end quote-end] 2rem [background-end];
+  grid-template-rows: [background-start] 1rem [review-start] auto [review-end] 1rem [button-start] auto [button-end] 1rem [truck-start quote-start] auto [quote-end] 2rem [background-end] auto [truck-end];
 
   inline-size: min(var(--layout-size-1), 100% - 2rem);
 
   margin-inline: auto;
 
   .void {
-    grid-area: void;
+    display: none;
   }
 
   .background {
@@ -41,10 +41,14 @@
 
       text-align: justify;
     }
+  }
 
-    .double-quotes {
-      opacity: 0.12;
-    }
+  .double-quotes {
+    grid-area: quote;
+
+    opacity: 0.5;
+
+    inline-size: 1.5rem;
   }
 
   .container-truck {
@@ -55,5 +59,26 @@
 
   .button {
     grid-area: button;
+
+    justify-self: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonial {
+    grid-template-columns: [void-start] 4.5rem [void-end background-start] 3.75rem [review-start quote-start] 1fr [review-end quote-end] 4rem [truck-start] 1fr [button-start] auto [background-end] 5.75rem [button-end] 4.5rem [truck-end];
+    grid-template-rows: [void-start background-start] 2rem [review-start truck-start] auto [truck-end button-start quote-start] auto [review-end button-end quote-end] 3rem [void-end background-end];
+
+    .void {
+      grid-area: void;
+    }
+
+    .double-quotes {
+      inline-size: 4.5rem;
+    }
+
+    .button {
+      align-self: end;
+    }
   }
 }
