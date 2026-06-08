@@ -1,6 +1,6 @@
 .statistics {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  /* grid-template-columns: repeat(2, auto); */
   justify-content: center;
   gap: 3rem;
 
