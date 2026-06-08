@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import ServiceCardComponent from "@/components/service-card/service-card.component";
+import ServiceCardComponent from "./components/service-card/service-card.component";
 
 import TimeIcon from "@/components/icons/time/time.icon";
 import RouteIcon from "@/components/icons/route/route.icon";
