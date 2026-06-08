@@ -1,43 +1,48 @@
 .hero {
-  position: relative;
+  display: grid;
+  grid-template-areas: "writings" "background";
+  gap: 3rem;
 
   .background {
-    position: absolute;
-    inset-block: 0;
-    inset-inline-end: 0;
-    z-index: -1;
+    grid-area: background;
+
+    justify-self: end;
 
     display: grid;
     grid-template-areas: "unified";
 
     img {
       grid-area: unified;
+
+      inline-size: 100%;
     }
 
     .overlay {
-      background-image: linear-gradient(to left, transparent, hsl(0deg 0 100%));
-
       grid-area: unified;
+
+      background-image: linear-gradient(
+        to bottom,
+        transparent,
+        hsl(0deg 0 100%)
+      );
     }
   }
 
   .writings {
     padding-inline-start: max(1rem, (100% - var(--layout-size-1)) / 2);
 
-    min-block-size: 42.5rem;
+    grid-area: writings;
 
     display: grid;
     align-content: center;
     gap: 3.5rem;
-
-    grid-area: writings;
 
     h1 {
       max-inline-size: 50rem;
 
       color: var(--color-primary);
 
-      font-size: 4.25rem;
+      font-size: clamp(2.375rem, 4.8vw + 0.1rem, 4.25rem);
       font-weight: 800;
 
       line-height: 1.3;
@@ -55,6 +60,28 @@
     .actions {
       display: flex;
       gap: 0.75rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    grid-template-areas: "monolithic";
+
+    .background {
+      grid-area: monolithic;
+
+      .overlay {
+        background-image: linear-gradient(
+          to left,
+          transparent,
+          hsl(0deg 0 100%)
+        );
+      }
+    }
+
+    .writings {
+      grid-area: monolithic;
     }
   }
 }
