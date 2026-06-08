@@ -13,14 +13,16 @@ export default function HeroComponent(): ReactNode {
         <img src={hero} alt="" />
         <div className={styles.overlay}></div>
       </div>
-      <h1>Effortless Logistics, Every Step of The Way</h1>
-      <p>
-        Manage your shipments, track in real-time, and get the best rates, all
-        from one platform
-      </p>
-      <div className={styles.actions}>
-        <ButtonComponent>Get a Free Quote</ButtonComponent>
-        <ButtonComponent>Learn More</ButtonComponent>
+      <div className={styles.writings}>
+        <h1>Effortless Logistics, Every Step of The Way</h1>
+        <p>
+          Manage your shipments, track in real-time, and get the best rates, all
+          from one platform
+        </p>
+        <div className={styles.actions}>
+          <ButtonComponent>Get a Free Quote</ButtonComponent>
+          <ButtonComponent>Learn More</ButtonComponent>
+        </div>
       </div>
     </div>
   );
