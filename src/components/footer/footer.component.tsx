@@ -2,8 +2,8 @@ import { type ReactNode } from "react";
 
 import { Link } from "react-router";
 
-import facebook from "@/assets/images/facebook.svg";
-import youtube from "@/assets/images/youtube.svg";
+import FacebookIcon from "@/components/icons/facebook/facebook.icon";
+import YoutubeIcon from "@/components/icons/youtube/youtube.icon";
 
 import styles from "./footer.module.css";
 
@@ -70,10 +70,10 @@ export default function FooterComponent(): ReactNode {
       <div className={styles.extra}>
         <div className={styles.socials}>
           <Link to="#">
-            <img src={facebook} alt="" />
+            <FacebookIcon />
           </Link>
           <Link to="#">
-            <img src={youtube} alt="" />
+            <YoutubeIcon />
           </Link>
         </div>
         <div className={styles.copyright}>
