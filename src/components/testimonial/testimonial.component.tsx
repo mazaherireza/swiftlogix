@@ -22,8 +22,8 @@ export default function TestimonialComponent(): ReactNode {
           inspections, ensuring that every vehicle meets stringent safety
           standards
         </p>
-        <img className={styles["double-quotes"]} src={doubleQuotes} alt="" />
       </div>
+      <img className={styles["double-quotes"]} src={doubleQuotes} alt="" />
       <img className={styles["container-truck"]} src={containerTruck} alt="" />
       <ButtonComponent className={styles.button}>
         Get a Free Quote
