@@ -1,0 +1,15 @@
+.not-found {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+
+  block-size: 100dvh;
+  block-size: 100vh;
+
+  color: var(--color-gray-40);
+
+  h1 {
+    font-weight: 100;
+  }
+}

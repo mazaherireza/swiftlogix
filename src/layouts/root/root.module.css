@@ -1,1 +1,4 @@
-.root {}
+.root {
+  block-size: 100dvh;
+  block-size: 100vh;
+}
